@@ -98,7 +98,7 @@ test('API PATCH Method Demo', async ({ request }) => {
     expect(body.title).toBe(newData.title);
 })
 
-test.only('API DELETE Method Demo', async ({ request }) => {
+test('API DELETE Method Demo', async ({ request }) => {
     // DELETE Method
     const response = await request.delete("https://jsonplaceholder.typicode.com/posts/10");
     const body = await response.json();
