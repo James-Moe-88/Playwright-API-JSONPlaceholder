@@ -1,7 +1,4 @@
 import { test, expect } from '@playwright/test'
-import dns from 'node:dns'
-
-dns.setDefaultResultOrder("ipv4first");
 
 test('API GET Method', async ({ request }) => {
     const response = await request.get("https://jsonplaceholder.typicode.com/posts");
